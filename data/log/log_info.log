@@ -1,0 +1,12 @@
+25-02-08.12:43:55.124 [main            ] INFO  Application            - Starting Application using Java 1.8.0_401 on hxy with PID 28888 (D:\桌面\拼团系统\group-buy-market\group-buy-market-app\target\classes started by huixinyuan in D:\桌面\拼团系统\group-buy-market)
+25-02-08.12:43:55.126 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-02-08.12:43:55.414 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+25-02-08.12:43:55.602 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-02-08.12:43:55.607 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-02-08.12:43:55.607 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-02-08.12:43:55.607 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-02-08.12:43:55.698 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-02-08.12:43:55.698 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 553 ms
+25-02-08.12:43:55.926 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-02-08.12:43:55.934 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-02-08.12:43:55.939 [main            ] INFO  Application            - Started Application in 1.035 seconds (JVM running for 1.708)
