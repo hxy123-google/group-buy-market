@@ -32,7 +32,7 @@ import java.util.concurrent.*;
 @Service
 public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntity, DefaultActivityStrategyFactory.DynamicContext, TrialBalanceEntity> {
    @Resource
-   private EndNode endNode;
+   private TagNode tagNode;
    @Resource
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource
@@ -51,6 +51,7 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
        QuerySkuVOFromDBThreadTask querySkuVOFromDBThreadTask = new QuerySkuVOFromDBThreadTask(requestParameter.getGoodsId(), repository);
        FutureTask<SkuVO> skuVOFutureTask = new FutureTask<>(querySkuVOFromDBThreadTask);
        threadPoolExecutor.execute(skuVOFutureTask);
+       log.info("hhh");
        // 写入上下文 - 对于一些复杂场景，获取数据的操作，有时候会在下N个节点获取，这样前置查询数据，可以提高接口响应效率
        dynamicContext.setGroupBuyActivityDiscountVO(groupBuyActivityDiscountVOFutureTask.get(timeout, TimeUnit.MINUTES));
        dynamicContext.setSkuVO(skuVOFutureTask.get(timeout, TimeUnit.MINUTES));
@@ -93,6 +94,6 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
         if (null == dynamicContext.getGroupBuyActivityDiscountVO() || null == dynamicContext.getSkuVO() || null == dynamicContext.getDeductionPrice()) {
             return errorNode;
         }
-       return endNode;
+       return tagNode;
     }
 }

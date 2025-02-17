@@ -16,5 +16,6 @@ public interface IActivityRepository {
     SkuVO querySkuByGoodsId(String goodsId);
 
     SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel, String goodsId);
+    boolean isTagCrowdRange(String tagId, String userId);
 
 }
