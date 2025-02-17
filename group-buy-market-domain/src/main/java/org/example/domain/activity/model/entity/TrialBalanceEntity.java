@@ -1,5 +1,10 @@
 package org.example.domain.activity.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -12,6 +17,10 @@ import java.util.Date;
  * @Create 2025/2/8 18:15
  * @Version 1.0
  */
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class TrialBalanceEntity {
     /** 商品ID */
     private String goodsId;

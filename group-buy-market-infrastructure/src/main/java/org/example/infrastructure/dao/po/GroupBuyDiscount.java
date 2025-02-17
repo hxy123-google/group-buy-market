@@ -18,9 +18,6 @@ import java.util.Date;
 @NoArgsConstructor
 public class GroupBuyDiscount {
 
-    /**
-     * 自增ID
-     */
     private Long id;
 
     /**
@@ -67,5 +64,6 @@ public class GroupBuyDiscount {
      * 更新时间
      */
     private Date updateTime;
+
 
 }

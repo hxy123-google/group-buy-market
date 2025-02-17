@@ -5,6 +5,7 @@ import org.example.domain.activity.model.entity.TrialBalanceEntity;
 import org.example.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
 import org.example.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import org.example.types.design.framework.tree.StrategyHandler;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
@@ -17,6 +18,7 @@ import javax.annotation.Resource;
  * @Create 2025/2/8 19:33
  * @Version 1.0
  */
+@Service
 public class IndexGroupBuyMarketServiceImpl implements IIndexGroupBuyMarketService{
     @Resource
     private DefaultActivityStrategyFactory defaultActivityStrategyFactory;
