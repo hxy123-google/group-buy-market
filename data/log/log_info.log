@@ -1,12 +1,36 @@
-25-02-08.12:43:55.124 [main            ] INFO  Application            - Starting Application using Java 1.8.0_401 on hxy with PID 28888 (D:\桌面\拼团系统\group-buy-market\group-buy-market-app\target\classes started by huixinyuan in D:\桌面\拼团系统\group-buy-market)
-25-02-08.12:43:55.126 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-25-02-08.12:43:55.414 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
-25-02-08.12:43:55.602 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
-25-02-08.12:43:55.607 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
-25-02-08.12:43:55.607 [main            ] INFO  StandardService        - Starting service [Tomcat]
-25-02-08.12:43:55.607 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-25-02-08.12:43:55.698 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-25-02-08.12:43:55.698 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 553 ms
-25-02-08.12:43:55.926 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
-25-02-08.12:43:55.934 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
-25-02-08.12:43:55.939 [main            ] INFO  Application            - Started Application in 1.035 seconds (JVM running for 1.708)
+25-03-12.22:11:06.021 [main            ] INFO  Application            - Starting Application using Java 1.8.0_401 on hxy with PID 39260 (D:\桌面\拼团系统\group-buy-market\group-buy-market-app\target\classes started by huixinyuan in D:\桌面\拼团系统\group-buy-market)
+25-03-12.22:11:06.023 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-03-12.22:11:06.758 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-03-12.22:11:06.760 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-03-12.22:11:06.795 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+25-03-12.22:11:07.020 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [org.example.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f9a6a72a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-03-12.22:11:07.070 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-org.example.config.RedisClientConfigProperties' of type [org.example.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-03-12.22:11:07.291 [main            ] INFO  Version                - Redisson 3.26.0
+25-03-12.22:11:08.073 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 116.198.240.105/116.198.240.105:16379
+25-03-12.22:11:08.386 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 116.198.240.105/116.198.240.105:16379
+25-03-12.22:11:08.462 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+25-03-12.22:11:08.644 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-03-12.22:11:08.652 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-03-12.22:11:08.652 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-03-12.22:11:08.652 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-03-12.22:11:08.763 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-03-12.22:11:08.763 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2712 ms
+25-03-12.22:11:09.795 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-03-12.22:11:09.817 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-03-12.22:11:09.826 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-03-12.22:11:09.837 [main            ] INFO  Application            - Started Application in 4.127 seconds (JVM running for 5.138)
+25-03-12.22:11:10.009 [RMI TCP Connection(3)-192.168.6.228] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-03-12.22:11:10.798 [RMI TCP Connection(5)-192.168.6.228] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-03-12.22:11:10.798 [RMI TCP Connection(5)-192.168.6.228] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-03-12.22:11:10.799 [RMI TCP Connection(5)-192.168.6.228] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-03-12.22:11:11.257 [RMI TCP Connection(3)-192.168.6.228] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-03-12.22:11:19.503 [http-nio-8091-exec-1] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:1
+25-03-12.22:11:19.642 [redisson-3-7    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 1
+25-03-12.22:12:16.671 [http-nio-8091-exec-2] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:0
+25-03-12.22:12:16.785 [redisson-3-8    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 0
+25-03-12.22:12:42.111 [http-nio-8091-exec-5] INFO  DCCController          - DCC 动态配置值变更 key:downgradeSwitch value:1
+25-03-12.22:12:42.229 [redisson-3-9    ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_downgradeSwitch 1
+25-03-12.22:13:15.170 [http-nio-8091-exec-6] INFO  DCCController          - DCC 动态配置值变更 key:cutRange value:0
+25-03-12.22:13:15.285 [redisson-3-10   ] INFO  DCCValueBeanFactory    - DCC 节点监听，动态设置值 group_buy_market_dcc_cutRange 0
+25-03-12.22:25:33.638 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-03-12.22:25:33.664 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

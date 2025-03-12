@@ -1,7 +1,7 @@
 package org.example.infrastructure.adapter.repository;
 
 
-import org.example.domain.activity.adapter.repository.IActivityRepository;
+import org.example.domain.activity.service.discount.repository.IActivityRepository;
 import org.example.domain.activity.model.valobj.DiscountTypeEnum;
 import org.example.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import org.example.domain.activity.model.valobj.SCSkuActivityVO;
@@ -14,6 +14,7 @@ import org.example.infrastructure.dao.po.GroupBuyActivity;
 import org.example.infrastructure.dao.po.GroupBuyDiscount;
 import org.example.infrastructure.dao.po.SCSkuActivity;
 import org.example.infrastructure.dao.po.Sku;
+import org.example.infrastructure.dcc.DCCService;
 import org.example.infrastructure.redis.IRedisService;
 import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
@@ -39,6 +40,8 @@ public class ActivityRepository implements IActivityRepository {
     private ISCSkuActivityDao skuActivityDao;
     @Resource
     private IRedisService redisService;
+    @Resource
+    private DCCService dccService;
     @Override
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId){
         // 根据SC渠道值查询配置中最新的1个有效的活动
@@ -107,6 +110,13 @@ public class ActivityRepository implements IActivityRepository {
         // 判断用户是否存在人群中
         return bitSet.get(redisService.getIndexFromUserId(userId));
     }
+    @Override
+    public boolean downgradeSwitch(){
+        return dccService.isDowngradeSwitch();
+    }
 
+    public boolean cutRange(String userId){
+        return dccService.isCutRange(userId);
+    }
 
 }

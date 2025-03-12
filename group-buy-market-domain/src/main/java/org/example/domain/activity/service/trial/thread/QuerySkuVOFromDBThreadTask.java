@@ -2,7 +2,7 @@ package org.example.domain.activity.service.trial.thread;
 
 
 
-import org.example.domain.activity.adapter.repository.IActivityRepository;
+import org.example.domain.activity.service.discount.repository.IActivityRepository;
 import org.example.domain.activity.model.valobj.SkuVO;
 
 import java.util.concurrent.Callable;

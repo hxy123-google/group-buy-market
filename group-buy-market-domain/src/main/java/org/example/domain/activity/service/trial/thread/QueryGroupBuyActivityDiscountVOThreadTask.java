@@ -2,7 +2,7 @@ package org.example.domain.activity.service.trial.thread;
 
 
 
-import org.example.domain.activity.adapter.repository.IActivityRepository;
+import org.example.domain.activity.service.discount.repository.IActivityRepository;
 import org.example.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import org.example.domain.activity.model.valobj.SCSkuActivityVO;
 

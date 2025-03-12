@@ -1,10 +1,9 @@
 package org.example.domain.activity.service.trial;
 
 
-import org.example.domain.activity.adapter.repository.IActivityRepository;
+import org.example.domain.activity.service.discount.repository.IActivityRepository;
 import org.example.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import org.example.types.design.framework.tree.AbstractMultiThreadStrategyRouter;
-import org.example.types.design.framework.tree.AbstractStrategyRouter;
 
 import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;

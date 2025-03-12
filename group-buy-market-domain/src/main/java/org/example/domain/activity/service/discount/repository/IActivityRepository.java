@@ -1,4 +1,4 @@
-package org.example.domain.activity.adapter.repository;
+package org.example.domain.activity.service.discount.repository;
 
 import org.example.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import org.example.domain.activity.model.valobj.SCSkuActivityVO;
@@ -17,5 +17,9 @@ public interface IActivityRepository {
 
     SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel, String goodsId);
     boolean isTagCrowdRange(String tagId, String userId);
+
+    boolean downgradeSwitch();
+
+    boolean cutRange(String userId);
 
 }
