@@ -1,6 +1,7 @@
-package org.example.domain.trade.repository;
+package org.example.domain.trade.adapter.repository;
 
 import org.example.domain.trade.model.aggregate.GroupBuyOrderAggregate;
+import org.example.domain.trade.model.entity.GroupBuyActivityEntity;
 import org.example.domain.trade.model.entity.MarketPayOrderEntity;
 import org.example.domain.trade.model.valobj.GroupBuyProgressVO;
 
@@ -18,4 +19,7 @@ public interface ITradeRepository {
 
     MarketPayOrderEntity lockMarketPayOrder( GroupBuyOrderAggregate groupBuyOrderAggregate);
 
+    GroupBuyActivityEntity queryGroupBuyActivityEntityByActivityId(Long activityId);
+
+    Integer queryOrderCountByActivityId(Long activityId, String userId);
 }

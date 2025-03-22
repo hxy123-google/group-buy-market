@@ -33,6 +33,8 @@ public class TrialBalanceEntity {
     private BigDecimal deductionPrice;
     /** 拼团目标数量 */
     private Integer targetCount;
+    // 支付金额
+    private BigDecimal payPrice;
     /** 拼团开始时间 */
     private Date startTime;
     /** 拼团结束时间 */
