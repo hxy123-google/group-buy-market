@@ -10,7 +10,7 @@ import org.example.domain.trade.model.entity.MarketPayOrderEntity;
 import org.example.domain.trade.model.entity.PayActivityEntity;
 import org.example.domain.trade.model.entity.PayDiscountEntity;
 import org.example.domain.trade.model.entity.UserEntity;
-import org.example.domain.trade.service.ITradeOrderService;
+import org.example.domain.trade.service.ITradeLockOrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,7 +32,7 @@ public class ITradeOrderServiceTest {
     private IIndexGroupBuyMarketService indexGroupBuyMarketService;
 
     @Resource
-    private ITradeOrderService tradeOrderService;
+    private ITradeLockOrderService tradeOrderService;
 
     @Test
     public void test_lockMarketPayOrder() throws Exception {

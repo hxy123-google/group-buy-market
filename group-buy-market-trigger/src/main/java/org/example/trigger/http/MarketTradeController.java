@@ -17,7 +17,7 @@ import org.example.domain.trade.model.entity.PayActivityEntity;
 import org.example.domain.trade.model.entity.PayDiscountEntity;
 import org.example.domain.trade.model.entity.UserEntity;
 import org.example.domain.trade.model.valobj.GroupBuyProgressVO;
-import org.example.domain.trade.service.ITradeOrderService;
+import org.example.domain.trade.service.ITradeLockOrderService;
 import org.example.types.enums.ResponseCode;
 import org.example.types.exception.AppException;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -42,7 +42,7 @@ public class MarketTradeController implements IMarketTradeService {
     private IIndexGroupBuyMarketService indexGroupBuyMarketService;
 
     @Resource
-    private ITradeOrderService tradeOrderService;
+    private ITradeLockOrderService tradeOrderService;
 
     @Override
     public Response<LockMarketPayOrderResponseDTO> lockMarketPayOrder(LockMarketPayOrderRequestDTO lockMarketPayOrderRequestDTO) {
