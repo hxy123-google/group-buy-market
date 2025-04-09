@@ -42,7 +42,7 @@ public class QueryGroupBuyActivityDiscountVOThreadTask implements Callable<Group
         SCSkuActivityVO scSkuActivityVO =activityRepository.querySCSkuActivityBySCGoodsId(source, channel, goodsId);//通过这三个在sc_sku_goodsId找activityId
         if (null == scSkuActivityVO) return null;
         // 查询活动配置
-        return activityRepository.queryGroupBuyActivityDiscountVO(scSkuActivityVO.getActivityId());//通过activityId找dicountId
+        return activityRepository.queryGroupBuyActivityDiscountVO(scSkuActivityVO.getActivityId());//通过activityId找discountId
     }
 
 }

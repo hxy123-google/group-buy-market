@@ -33,5 +33,8 @@ public class PayDiscountEntity {
     /** 支付金额 */
     private BigDecimal payPrice;
     private String outTradeNo;
+    /** 回调地址 */
+    private String notifyUrl;
+
 
 }

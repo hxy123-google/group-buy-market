@@ -45,5 +45,4 @@ public class TrialBalanceEntity {
     private Boolean isEnable;
     /** 活动配置信息 */
     private GroupBuyActivityDiscountVO groupBuyActivityDiscountVO;
-
 }

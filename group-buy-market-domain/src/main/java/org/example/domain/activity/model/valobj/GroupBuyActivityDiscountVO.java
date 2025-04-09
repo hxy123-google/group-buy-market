@@ -19,7 +19,10 @@ import java.util.Objects;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupBuyActivityDiscountVO {
+public class
+
+
+GroupBuyActivityDiscountVO {
 
     /**
      * 活动ID
