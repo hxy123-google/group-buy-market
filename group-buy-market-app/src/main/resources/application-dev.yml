@@ -39,6 +39,7 @@ redis:
   sdk:
     config:
       host: 116.198.240.105
+      password: "20020606Hxy"
       port: 16379
       pool-size: 10
       min-idle-size: 5

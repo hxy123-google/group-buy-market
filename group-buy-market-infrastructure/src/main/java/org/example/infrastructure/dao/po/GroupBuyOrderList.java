@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.infrastructure.dao.po.base.Page;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -17,7 +18,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupBuyOrderList {
+public class GroupBuyOrderList extends Page {
 
     /** 自增ID */
     private Long id;
@@ -44,6 +45,8 @@ public class GroupBuyOrderList {
     /** 折扣金额 */
     private BigDecimal deductionPrice;
     /** 状态；0初始锁定、1消费完成 */
+    /** 支付金额 */
+    private BigDecimal payPrice;
     private Integer status;
     /** 外部交易单号-确保外部调用唯一幂等 */
     private String outTradeNo;
@@ -51,10 +54,10 @@ public class GroupBuyOrderList {
     private Date outTradeTime;
     /** 唯一业务ID */
     private String bizId;
-
     /** 创建时间 */
     private Date createTime;
     /** 更新时间 */
     private Date updateTime;
 
 }
+

@@ -4,6 +4,9 @@ package org.example.infrastructure.dao;
 import org.apache.ibatis.annotations.Mapper;
 import org.example.infrastructure.dao.po.GroupBuyOrder;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 用户拼单
@@ -22,7 +25,15 @@ public interface IGroupBuyOrderDao {
 
     GroupBuyOrder queryGroupBuyTeamByTeamId(String teamId);
 
+    int updateAddCompleteCount(String teamId);
+
     int updateOrderStatus2COMPLETE(String teamId);
 
-    int updateAddCompleteCount(String teamId);
+    List<GroupBuyOrder> queryGroupBuyProgressByTeamIds(Set<String> teamIds);
+
+    Integer queryAllTeamCount(Set<String> teamIds);
+
+    Integer queryAllTeamCompleteCount(Set<String> teamIds);
+
+    Integer queryAllUserCount(Set<String> teamIds);
 }

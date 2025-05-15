@@ -9,7 +9,7 @@ services:
     restart: always
     environment:
       TZ: Asia/Shanghai
-      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 20020606Hxy
     ports:
       - "13306:3306"
     volumes:
@@ -51,7 +51,7 @@ services:
       - 16379:6379
     volumes:
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
-    command: redis-server /usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf --requirepass 20020606Hxy
     networks:
       - my-network
     healthcheck:
@@ -70,8 +70,8 @@ services:
       - 8081:8081
     environment:
       - REDIS_HOSTS=local:redis:6379
-      - HTTP_USER=admin
-      - HTTP_PASSWORD=admin
+      - HTTP_USER=hxy123
+      - HTTP_PASSWORD=20020606Hxy
       - LANG=C.UTF-8
       - LANGUAGE=C.UTF-8
       - LC_ALL=C.UTF-8
